@@ -4,11 +4,13 @@ A terminal file manager that teaches you the shell as you use it. Every action y
 
 ![Python](https://img.shields.io/badge/Python-3.10+-blue) ![Textual](https://img.shields.io/badge/TUI-Textual-green) ![macOS](https://img.shields.io/badge/Platform-macOS-lightgrey)
 
+![ShellGuide File Browser](docs/screenshots/ShellGuideMain.png)
+
 ## Quick Start
 
 ```bash
-git clone <repo-url>
-cd cli_manager
+git clone https://github.com/WalrusQuant/shellguide.git
+cd shellguide
 python -m venv .venv
 source .venv/bin/activate
 pip install -e .
@@ -29,6 +31,8 @@ shellguide
 ```
 
 A three-panel file manager with directory tree, file list, and info panel. When **Learn Mode** is on (default), every action logs the equivalent shell command with a plain-English explanation in the bottom panel.
+
+![ShellGuide Help Screen](docs/screenshots/ShellGuideHelp.png)
 
 **Keyboard shortcuts:**
 
@@ -59,7 +63,9 @@ shellguide --teach
 
 Guided interactive lessons where you type real shell commands into a sandboxed directory (`~/shellguide_sandbox/`). The sandbox is created automatically and cleaned up when you exit.
 
-**8 lessons covering:**
+![ShellGuide Teach Mode](docs/screenshots/ShellGuideTeach.png)
+
+**10 lessons covering:**
 1. Looking Around (`ls`, `pwd`)
 2. Navigation (`cd`, `..`)
 3. Creating Files & Folders (`touch`, `mkdir`)
@@ -68,6 +74,8 @@ Guided interactive lessons where you type real shell commands into a sandboxed d
 6. Deleting (`rm`, `rmdir`, `rm -r`)
 7. Reading Files (`cat`, `head`, `tail`, `wc`)
 8. Finding Things (`find`, `stat`)
+9. Combining Commands (`&&`)
+10. Real Workflows (multi-step tasks)
 
 Each challenge validates your command, provides hints if you get stuck, and explains the right answer.
 
