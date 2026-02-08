@@ -1,0 +1,4 @@
+cd /Users/adamwickwire/GitHub/cli_manager
+source .venv/bin/activate
+shellguide
+

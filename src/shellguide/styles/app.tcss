@@ -1,0 +1,236 @@
+/* ShellGuide — Textual CSS Layout */
+
+Screen {
+    layout: vertical;
+}
+
+/* --- Breadcrumb --- */
+#breadcrumb {
+    height: 1;
+    background: $surface;
+    color: $text;
+    padding: 0 1;
+}
+
+/* --- Main three-panel layout --- */
+#main-container {
+    layout: horizontal;
+    height: 1fr;
+}
+
+#directory-tree {
+    width: 24;
+    min-width: 16;
+    border-right: solid $primary-background;
+    overflow-y: auto;
+}
+
+#file-table-container {
+    width: 1fr;
+    min-width: 30;
+}
+
+#file-table {
+    height: 1fr;
+}
+
+#file-info-panel {
+    width: 28;
+    min-width: 20;
+    border-left: solid $primary-background;
+    padding: 1;
+    overflow-y: auto;
+}
+
+/* --- Command Log (learn mode) --- */
+#command-log {
+    height: 8;
+    border-top: solid $primary-background;
+    padding: 0 1;
+    overflow-y: auto;
+    display: none;
+}
+
+#command-log.visible {
+    display: block;
+}
+
+/* --- Status Bar --- */
+#status-bar {
+    height: 1;
+    background: $surface;
+    color: $text-muted;
+    padding: 0 1;
+}
+
+/* --- Learn mode badge in header --- */
+.learn-badge-on {
+    color: $success;
+    text-style: bold;
+}
+
+.learn-badge-off {
+    color: $text-muted;
+}
+
+/* --- File info panel styling --- */
+#file-info-panel Static {
+    margin-bottom: 0;
+}
+
+.info-label {
+    color: $text-muted;
+    text-style: bold;
+}
+
+.info-value {
+    margin-bottom: 1;
+}
+
+/* --- Command log styling --- */
+.cmd-safe {
+    color: $success;
+}
+
+.cmd-caution {
+    color: $warning;
+}
+
+.cmd-destructive {
+    color: $error;
+}
+
+/* --- Dialogs --- */
+ConfirmDialog {
+    align: center middle;
+}
+
+ConfirmDialog #dialog-container {
+    width: 60;
+    height: auto;
+    max-height: 16;
+    border: thick $primary;
+    background: $surface;
+    padding: 1 2;
+}
+
+ConfirmDialog #dialog-buttons {
+    layout: horizontal;
+    height: 3;
+    align: center middle;
+    margin-top: 1;
+}
+
+ConfirmDialog #dialog-buttons Button {
+    margin: 0 1;
+}
+
+InputDialog {
+    align: center middle;
+}
+
+InputDialog #input-dialog-container {
+    width: 60;
+    height: auto;
+    max-height: 16;
+    border: thick $primary;
+    background: $surface;
+    padding: 1 2;
+}
+
+InputDialog #input-buttons {
+    layout: horizontal;
+    height: 3;
+    align: center middle;
+    margin-top: 1;
+}
+
+InputDialog #input-buttons Button {
+    margin: 0 1;
+}
+
+/* --- Search screen --- */
+SearchScreen {
+    align: center middle;
+}
+
+SearchScreen #search-container {
+    width: 70;
+    height: 24;
+    border: thick $primary;
+    background: $surface;
+    padding: 1 2;
+}
+
+SearchScreen #search-results {
+    height: 1fr;
+    margin-top: 1;
+}
+
+/* --- Help screen --- */
+HelpScreen {
+    align: center middle;
+}
+
+HelpScreen #help-container {
+    width: 70;
+    height: 28;
+    border: thick $primary;
+    background: $surface;
+    padding: 1 2;
+    overflow-y: auto;
+}
+
+/* --- Teach Mode --- */
+#teach-main {
+    layout: horizontal;
+    height: 1fr;
+}
+
+#teach-left {
+    width: 1fr;
+    min-width: 40;
+}
+
+#teach-history {
+    height: 1fr;
+    border-bottom: solid $primary-background;
+    padding: 0 1;
+    overflow-y: auto;
+}
+
+#sandbox-view {
+    height: 4;
+    padding: 0 1;
+    background: $surface;
+}
+
+#challenge-panel {
+    width: 30;
+    min-width: 24;
+    border-left: solid $primary-background;
+    overflow-y: auto;
+}
+
+#cheat-sheet-panel {
+    width: 30;
+    min-width: 24;
+    border-left: solid $primary-background;
+    overflow-y: auto;
+    display: none;
+}
+
+#cheat-sheet-panel.visible {
+    display: block;
+}
+
+#teach-input {
+    height: 3;
+}
+
+#teach-footer-bar {
+    height: 1;
+    background: $surface;
+    color: $text-muted;
+    padding: 0 1;
+}
