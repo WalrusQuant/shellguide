@@ -118,6 +118,4 @@ src/shellguide/
 - **pathlib / shutil** — Safe filesystem operations (no shell commands executed in file browser mode)
 - **[Hatchling](https://hatch.pypa.io/)** — Build backend
 
-## License
 
-MIT
